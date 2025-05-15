@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { Routing } from "./router/Routing";
 
 function App() {
-  return <h1>Proyecto Red Social en React</h1>;
+  return (
+    <div className="layout">
+      {/* Cargando toda la configuración de rutas */}
+      <Routing />
+    </div>
+  );
 }
 
 export default App;
