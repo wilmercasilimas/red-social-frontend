@@ -20,7 +20,6 @@ export const Register = () => {
     });
 
     const data = await request.json();
-    console.log(data);
 
     if (data.status === "success") {
       setSaved("saved");
@@ -39,7 +38,7 @@ export const Register = () => {
         {saved === "saved" ? (
           <strong className="alert alert-success">
             ¡Usuario registrado correctamente!
-            <br /> Puedes iniciar sesión ahora. 
+            <br /> Puedes iniciar sesión ahora.
           </strong>
         ) : (
           ""
